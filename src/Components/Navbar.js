@@ -7,67 +7,68 @@ import './Navbar.css';
 
 function Navbar() {
     return (
-        <div>
 
 
 
-            {/* basket */}
-
-            <nav className="  header ">
-                {/* logo on the left */}
-                <Link to="/"><img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" /></Link>
-
-                {/* searchbox */}
-                <div className="header__search">
-                    <input type="text" className="header__searchInput" />
-                    <SearchIcon className="header__searchIcon" />
-                </div>
 
 
-                {/* 3 links signin return prime */}
-                <div className="header__nav">
 
-                    {/* 1st link */}
-                    <Link to="/login" className="header__link">
-                        <div className="header__option">
-                            <span className="header__optionLineOne">Hello</span>
-                            <span className="header__optionLineTwo">Sign-in</span>
-                        </div>
-                    </Link>
+        <nav className="  header ">
 
+            {/* logo on the left */}
+            <Link to="/"><img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" /></Link>
 
-                    {/* 2nd link */}
-                    <Link to="/" className="header__link">
-                        <div className="header__option">
-                            <span className="header__optionLineOne">Returns</span>
-                            <span className="header__optionLineTwo">& orders</span>
-                        </div>
-                    </Link>
+            {/* searchbox */}
+            <div className="header__search">
+                <input type="text" className="header__searchInput" />
+                <SearchIcon className="header__searchIcon" />
+            </div>
 
 
-                    {/* 3rd link */}
-                    <Link to="/" className="header__link">
-                        <div className="header__option">
-                            <span className="header__optionLineOne">Your</span>
-                            <span className="header__optionLineTwo">Prime</span>
-                        </div>
-                    </Link>
+            {/* 3 links signin return prime */}
+            <div className="header__nav">
 
-                    {/* 4th link */}
-                    <Link to="/checkout" className="header__link">
-                        <div className="header__optionBasket">
-                            {/* Basket logo */}
-                            <ShoppingBasketIcon />
+                {/* 1st link */}
+                <Link to="/login" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineOne">Hello</span>
+                        <span className="header__optionLineTwo">Sign-in</span>
+                    </div>
+                </Link>
 
 
-                            {/* Basket items number */}
-                            <span className="header__optionLineTwo header__basketcount">0</span>
-                        </div>
-                    </Link>
-                </div>
-            </nav>
+                {/* 2nd link */}
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineOne">Returns</span>
+                        <span className="header__optionLineTwo">& orders</span>
+                    </div>
+                </Link>
 
-        </div>
+
+                {/* 3rd link */}
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__optionLineOne">Your</span>
+                        <span className="header__optionLineTwo">Prime</span>
+                    </div>
+                </Link>
+
+                {/* 4th link */}
+                <Link to="/checkout" className="header__link">
+                    <div className="header__optionBasket">
+                        {/* Basket logo */}
+                        <ShoppingBasketIcon />
+
+
+                        {/* Basket items number */}
+                        <span className="header__optionLineTwo header__basketcount">0</span>
+                    </div>
+                </Link>
+            </div>
+        </nav>
+
+
     );
 }
 
