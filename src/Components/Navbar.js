@@ -13,7 +13,7 @@ function Navbar() {
 
             {/* basket */}
 
-            <nav className="header">
+            <nav className="  header ">
                 {/* logo on the left */}
                 <Link to="/"><img className="header__logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="" /></Link>
 
