@@ -24,6 +24,10 @@ function Home() {
                     price={100.2} id="1" rating={5}
                     image="https://m.media-amazon.com/images/I/61bRT+Jzd-S._AC_SX410_SY308_.jpg" />
 
+                <Products title="Vivo Y73 (Diamond Flare, 8GB RAM, 128GB Storage)"
+                    price={100.2} id="1" rating={5}
+                    image="https://m.media-amazon.com/images/I/61bRT+Jzd-S._AC_SX410_SY308_.jpg" />
+
             </div>
 
             <div className="home__productsRow two">
@@ -66,18 +70,19 @@ function Home() {
 
             <div className="home__productsRow two">
 
-                <Products title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"
+                <Products title="New Apple iPhone 12 Pro Max (128GB) - Pacific Blue"
                     price={100.2} id="1" rating={5}
-                    image="https://m.media-amazon.com/images/I/81lGGiahJTS._SL1500_.jpg" />
-                <Products title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"
+                    image="https://m.media-amazon.com/images/I/71MHTD3uL4L._SL1500_.jpg" />
+
+                <Products title="New Apple iPhone 11 (64GB) - (Product) RED"
                     price={100.2} id="1" rating={5}
-                    image="https://m.media-amazon.com/images/I/81lGGiahJTS._SL1500_.jpg" />
-                <Products title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"
-                    price={100.2} id="1" rating={5}
-                    image="https://m.media-amazon.com/images/I/81lGGiahJTS._SL1500_.jpg" />
+                    image="https://m.media-amazon.com/images/I/71hh7cpWadL._SL1500_.jpg" />
 
             </div>
 
+            <footer>
+                Made with ❤ by Tamal.
+            </footer>
         </div>
     );
 }

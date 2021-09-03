@@ -9,7 +9,7 @@
     /* so that the products row is on top of the starting image */
     display: flex;
     position: relative;
-    bottom: 55px;
+    bottom: 25px;
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
@@ -23,4 +23,12 @@
     /* the image must be like a background and have the cards over it */
     z-index: -1;
     margin-bottom: -110px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
 }
