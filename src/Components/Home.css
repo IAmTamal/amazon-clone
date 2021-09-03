@@ -6,8 +6,10 @@
 }
 
 .home__productsRow {
+    /* so that the products row is on top of the starting image */
     display: flex;
     position: relative;
+    bottom: 55px;
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
@@ -16,7 +18,7 @@
 .home__img {
     /* The home image */
     width: 100%;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
 
     /* the image must be like a background and have the cards over it */
     z-index: -1;
