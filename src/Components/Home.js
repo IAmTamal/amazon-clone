@@ -12,7 +12,18 @@ function Home() {
             {/* Product id title price rating image */}
             {/* the products component here  */}
 
-            <Products title="Hello there" />
+            <div className="home__productsRow">
+                <Products title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"
+                    price={100.2} id="1" rating={5}
+                    image="https://m.media-amazon.com/images/I/81lGGiahJTS._SL1500_.jpg" />
+                <Products title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"
+                    price={100.2} id="1" rating={5}
+                    image="https://m.media-amazon.com/images/I/81lGGiahJTS._SL1500_.jpg" />
+                <Products title="Samsung Galaxy S20 FE 5G (Cloud Navy, 8GB RAM, 128GB Storage)"
+                    price={100.2} id="1" rating={5}
+                    image="https://m.media-amazon.com/images/I/81lGGiahJTS._SL1500_.jpg" />
+            </div>
+
         </div>
     );
 }
