@@ -12,23 +12,23 @@ function Login() {
 
 
             <div className="login__container">
-                <h1>Sign in</h1>
+                <h1 className="login__signin">Sign in</h1>
 
                 <form >
                     <h5>E-mail</h5>
-                    <input type="email" name="" id="" />
+                    <input className="login__mail" type="email" name="" id="" />
                     <h5>Password</h5>
-                    <input type="password" />
-                    <button className="login__button">
+                    <input className="login__pass" type="password" />
+                    <button className="login__button" type="submit">
                         Sign in
                     </button>
                 </form>
 
-                <p>
+                <p className="login__terms">
                     By signing-in you agree to the AMAZON terms and Conditions of Use & Sale. Please
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice before continuing further.
                 </p>
-                <button>Create your amazon account</button>
+                <button className="login__register">Create your amazon account</button>
             </div>
 
         </div>
