@@ -12,6 +12,7 @@
     flex-direction: column;
     padding: 20px;
     border: 1px solid lightgray;
+    border-radius: 5px;
 }
 
 .login__signin {
