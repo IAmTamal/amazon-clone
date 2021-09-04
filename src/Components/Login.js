@@ -25,10 +25,10 @@ function Login() {
                 </form>
 
                 <p>
-                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
-                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                    By signing-in you agree to the AMAZON terms and Conditions of Use & Sale. Please
+                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice before continuing further.
                 </p>
-
+                <button>Create your amazon account</button>
             </div>
 
         </div>
