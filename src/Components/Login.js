@@ -11,6 +11,26 @@ function Login() {
             </Link>
 
 
+            <div className="login__container">
+                <h1>Sign in</h1>
+
+                <form >
+                    <h5>E-mail</h5>
+                    <input type="email" name="" id="" />
+                    <h5>Password</h5>
+                    <input type="password" />
+                    <button className="login__button">
+                        Sign in
+                    </button>
+                </form>
+
+                <p>
+                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
+                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                </p>
+
+            </div>
+
         </div>
     )
 }
