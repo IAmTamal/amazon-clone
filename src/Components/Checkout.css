@@ -10,9 +10,14 @@
 
 }
 
-.checkout {
+.checkout__structure {
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.checkout__main {
+    display: flex;
+    height: max-content;
 }
 
 .checkout__title {

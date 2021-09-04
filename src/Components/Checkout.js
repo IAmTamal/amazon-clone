@@ -2,7 +2,8 @@ import React from 'react'
 import "./Checkout.css"
 import { useStateValue } from './StateProvider'
 import CheckoutProduct from './CheckoutProduct'
-
+import Subtotal from './Subtotal';
+import CurrencyFormat from 'react-currency-format';
 
 
 function Checkout() {
@@ -10,13 +11,13 @@ function Checkout() {
 
 
     return (
-        <>
+        <div className="checkout__main">
             <div className="checkout__left">
                 <img src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" className="checkout__image"
                     alt="" />
                 {/* //This is literally the checkout page
             //just an ad here.    */}
-                <div className="checkout">
+                <div className="checkout__structure">
 
 
                     {/* to check if the basket is full or empty */}
@@ -48,12 +49,15 @@ function Checkout() {
                         </>
                     )}
 
-
-
-
                 </div>
             </div>
-        </>
+            {/* end of left */}
+            {basket.length > 0 && (
+                <div className="checkout__right">
+                    <Subtotal />
+                </div>
+            )}
+        </div>
 
     );
 
