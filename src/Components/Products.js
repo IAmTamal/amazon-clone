@@ -40,6 +40,7 @@ function Products({ id, title, image, price, rating }) {
                             <p>⭐</p>
                         ))}
                 </div>
+
             </div>
 
             <img src={image} alt="" className="product__image" />
