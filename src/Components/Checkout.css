@@ -3,3 +3,19 @@
     width: 100%;
     margin-bottom: 10px;
 }
+
+.checkout__div {
+
+    background-color: white;
+
+}
+
+.checkout {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.checkout__title {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
