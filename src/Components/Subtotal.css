@@ -8,6 +8,9 @@
     padding: 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .subtotal__gift {
