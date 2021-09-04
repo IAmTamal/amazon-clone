@@ -7,6 +7,9 @@
 <br><br>
 
 # Screenshots:
+![ss1](https://user-images.githubusercontent.com/72851613/132102130-70cbe780-41da-456f-bd66-224a84fb7437.png)
+![ss3](https://user-images.githubusercontent.com/72851613/132102144-f6cdcc12-a8d1-4a0f-8b69-f85e64b0e260.png)
+
 
 ## Available Scripts
 
