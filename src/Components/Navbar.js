@@ -28,9 +28,11 @@ function Navbar() {
         <SearchIcon className="header__searchIcon" />
       </div>
 
-      {/* 3 links signin return prime */}
+      {/* 3 links signin, return, prime  and one basket*/}
+
       <div className="header__nav">
-        {/* 1st link */}
+
+        {/* 1st link sign-in*/}
         <Link to="/login" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Hello</span>
@@ -38,7 +40,7 @@ function Navbar() {
           </div>
         </Link>
 
-        {/* 2nd link */}
+        {/* 2nd link returns */}
         <Link to="/" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Returns</span>
@@ -46,7 +48,7 @@ function Navbar() {
           </div>
         </Link>
 
-        {/* 3rd link */}
+        {/* 3rd link prime*/}
         <Link to="/" className="header__link">
           <div className="header__option">
             <span className="header__optionLineOne">Your</span>
@@ -54,7 +56,7 @@ function Navbar() {
           </div>
         </Link>
 
-        {/* 4th link */}
+        {/* 4th link basket */}
         <Link to="/checkout" className="header__link">
           <div className="header__optionBasket">
             {/* Basket logo */}
@@ -62,10 +64,14 @@ function Navbar() {
 
             {/* Basket items number */}
             <span className="header__optionLineTwo header__basketcount">
+              {/* this basically will show you the length of the basket */}
               {basket?.length}
             </span>
           </div>
         </Link>
+
+
+        {/* end */}
       </div>
     </nav>
   );
