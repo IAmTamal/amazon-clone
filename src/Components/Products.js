@@ -1,24 +1,31 @@
 import React from "react";
 import "./Products.css";
 import { useStateValue } from "./StateProvider";
+import { auth } from "../firebase"
+import { useHistory } from "react-router-dom"
 
 function Products({ id, title, image, price, rating }) {
-
-    const [{ basket }, dispatch] = useStateValue();
+    let history = useHistory();
+    const [{ basket, user }, dispatch] = useStateValue();
     const addToBasket = () => {
         //add items to basket using dispatch
+        if (user) {
+            dispatch({
+                //remember in reducer we have a switch case of action.type named as ADD_TO_BASKET
+                type: 'ADD_TO_BASKET',
+                item: {
+                    id: id,
+                    title: title,
+                    image: image,
+                    price: price,
+                    rating: rating,
+                },
+            });
+        }
+        else {
+            history.push("/Login");
+        }
 
-        dispatch({
-            //remember in reducer we have a switch case of action.type named as ADD_TO_BASKET
-            type: 'ADD_TO_BASKET',
-            item: {
-                id: id,
-                title: title,
-                image: image,
-                price: price,
-                rating: rating,
-            },
-        });
     };
 
     return (
