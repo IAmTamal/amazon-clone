@@ -6,9 +6,39 @@ import Home from "./Components/Home";
 import Checkout from "./Components/Checkout";
 import Login from "./Components/Login";
 import { useStateValue } from "./Components/StateProvider";
+import { auth } from "./firebase";
 
 function App() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
+
+  //useEffect hook
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+
+      if (authUser) {
+        //logged in
+        dispatch({
+          type: "SET_USER",
+          user: authUser
+        })
+      }
+      else {
+        //logged out
+        dispatch({
+          type: "SET_USER",
+          user: null
+        })
+      }
+
+    });
+
+    return () => {
+      unsubscribe();
+    }
+  }, []);
+
+  console.log("USER IS >>>>", user);
+
   return (
     //These are basically routes to different types of pages
     <Router>
